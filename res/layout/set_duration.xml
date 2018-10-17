@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000">
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_weight="1">
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:text="Start time"
+    android:textStyle="bold|italic"
+    android:textSize="25dp"
+    android:gravity="center_horizontal"
+    android:layout_marginTop="20dp"
+    android:textColor="#fff"
+    android:layout_weight="1"
+    />
+    <TimePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/startTime"
+        android:layout_weight="1"
+        android:background=	"#ffffff"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+    </TimePicker>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=" End time "
+            android:textStyle="bold|italic"
+            android:textSize="25dp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:textColor="#fff"
+            android:layout_weight="1"
+            />
+        <TimePicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/endTime"
+            android:layout_weight="1"
+            android:background=	"#ffffff"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+        </TimePicker>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1.5"
+        android:layout_marginTop="20dp">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Submit"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/btnSubmit"
+        android:background="@drawable/shape"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CANCEL"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/btnCancel"
+            android:background="@drawable/shape"/>
+    </LinearLayout>
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/snackbar_position"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1.5">
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+
+
+</LinearLayout>
